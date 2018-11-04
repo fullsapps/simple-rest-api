@@ -1,0 +1,7 @@
+{
+  "extends": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "warn"
+  }
+}
