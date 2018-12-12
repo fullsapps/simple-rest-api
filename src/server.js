@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-const logDirectory = path.join(__dirname, 'logs');
+const logDirectory = path.join(__dirname, '/../logs');
 fs.existsSync(logDirectory) || fs.mkdirSync(logDirectory);
 const accessLogStream = rfs('combined.log', {
   interval: '1d',
